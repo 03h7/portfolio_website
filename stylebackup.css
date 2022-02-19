@@ -14,24 +14,30 @@ html,body{
 .one{
     margin: auto;
     color: papayawhip;
+    padding-bottom: 40px;
 }
 
-.one .wip{
-    font-size:2em;
+.wip{
+    font-size:4em;
+    text-align: center;
 }
 
 .one a{
-    font-size: 1em;
+    font-size: 2em;
     color:inherit;
     text-decoration: none;
 }
-.one a:hover{
-    border-bottom: 1px solid papayawhip;
+.links a:hover{
+    border-bottom: 5px solid papayawhip;
     border-color: inherit;
 }
 
 .links{
     text-align: center;
+}
+
+.links > a{
+    margin-right: 10px;
 }
 
 .twitter:hover{
@@ -54,14 +60,21 @@ html,body{
     color:mediumpurple;
 }
 
+#mail:hover{
+    transition:0.25s;
+    color:rgb(102, 204, 102);
+}
+
 .mess{
     text-align: center;
     position:absolute;
     left:0;
     right:0;
+    padding-top: 30px;
+    font-size: 2em;
 }
 
-.messtwitter, .messtwitch, .messitch, .messgit{
+.messtwitter, .messtwitch, .messitch, .messgit, .messmail{
     display:none;
 }
 
@@ -81,6 +94,10 @@ html,body{
     color:slategray;
 }
 
+.messmail{
+    color:rgb(102, 204, 102);
+}
+
 @media screen and (max-width: 450px){
     .twitter{
         color:cornflowerblue !important;
@@ -96,3 +113,92 @@ html,body{
     }
 }
 
+.grid{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+    justify-items: center;
+    font-size: 2em;
+}
+
+.first-el{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: papayawhip;
+    width: 100%;
+    height: 100%;
+}
+
+
+.second-el{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: papayawhip;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+.third-el{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: papayawhip;
+    width: 100%;
+    height: 100%;
+}
+
+.fourth-el{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: papayawhip;
+    width: 100%;
+    height: 100%;
+}
+*/
+.grid > a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.work{
+    text-align: center;
+    font-size: 1em;
+}
+
+.work:hover > a{
+    transition: 0.25s;
+    border-bottom: 4px solid papayawhip !important;
+}
+
+.flash{
+    animation: flash 0.2s linear;
+}
+
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
