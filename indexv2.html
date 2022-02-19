@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>03h7</title>
+        <meta name="description" content="super site trop cool"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="rssletterboxd.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="one">
+            <p class=wip>Work in progress</p>
+            <div class="links">
+                <a href="https://twitter.com/03h_7" target="_blank" class="twitter">twitter</a>
+                <a href="https://03h7.itch.io" target="_blank" class="itch">itch.io</a>
+                <a href="https://github.com/03h7" target="_blank" class="git">github</a>
+                <a href="https://twitch.tv/03h7" target="_blank" class="twitch">twitch</a>
+            </div>
+            <div class="mess">
+                <p class="messtwitter">que des tweets désastreux</p>
+                <p class="messitch">des jeux pourris n'y jouez surtout pas</p>
+                <p class="messgit">c'est vide je le met juste pour faire beau</p>
+                <p class="messtwitch">bon je live pas mais on sait jamais</p>
+            </div>
+            <div id="letterboxd">
+
+            </div>
+            <!--<script src="" async defer></script>-->
+        </div>
+    </body>
+</html>
+<script>
+    $(".twitter").hover(
+        function(){
+            $(".messtwitter").fadeIn();
+        }, function(){
+            $(".messtwitter").hide();
+        }
+    );
+    $(".twitch").hover(
+        function(){
+            $(".messtwitch").fadeIn();
+        }, function(){
+            $(".messtwitch").hide();
+        }
+    );
+    $(".itch").hover(
+        function(){
+            $(".messitch").fadeIn();
+        }, function(){
+            $(".messitch").hide();
+        }
+    );
+    $(".git").hover(
+        function(){
+            $(".messgit").fadeIn();
+        }, function(){
+            $(".messgit").hide();
+        }
+    );
+</script>

@@ -1,0 +1,30 @@
+$(function(){
+    $(".twitter").on("mouseenter",
+        function(){
+            $(".messtwitter").show();
+        }).on("mouseleave",
+        function(){
+            $(".messtwitter").hide();
+        });
+    $(".twitch").on("mouseenter",
+        function(){
+            $(".messtwitch").show();
+        }).on("mouseleave",
+        function(){
+            $(".messtwitch").hide();
+        });
+    $(".itch").on("mouseenter",
+        function(){
+            $(".messitch").show();
+        }).on("mouseleave",
+        function(){
+            $(".messitch").hide();
+        });
+    $(".git").on("mouseenter",
+        function(){
+            $(".messgit").show();
+        }).on("mouseleave",
+        function(){
+            $(".messgit").hide();
+        });
+});

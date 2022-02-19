@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Palatino;
+    src: url(PalatinoLinotype.ttf);
+  }
+
+html,body{
+    background-color:#0b1a18;
+    display: grid;
+    height: 100%;
+    font-family: Palatino;
+}
+
+.one{
+    margin: auto;
+    color: papayawhip;
+}
+
+.one .wip{
+    font-size:2em;
+}
+
+.one a{
+    font-size: 1em;
+    color:inherit;
+    text-decoration: none;
+}
+.one a:hover{
+    border-bottom: 1px solid papayawhip;
+    border-color: inherit;
+}
+
+.links{
+    text-align: center;
+}
+
+.twitter:hover{
+    transition:0.25s;
+    color:cornflowerblue;
+}
+
+.itch:hover{
+    transition:0.25s;
+    color:#FA5C5B;
+}
+
+.git:hover{
+    transition:0.25s;
+    color:slategray;
+}
+
+.twitch:hover{
+    transition:0.25s;
+    color:mediumpurple;
+}
+
+.mess{
+    text-align: center;
+    position:absolute;
+    left:0;
+    right:0;
+}
+
+.messtwitter, .messtwitch, .messitch, .messgit{
+    display:none;
+}
+
+.messtwitter{
+    color:cornflowerblue;
+}
+
+.messtwitch{
+    color:mediumpurple;
+}
+
+.messitch{
+    color:#FA5C5B;
+}
+
+.messgit{
+    color:slategray;
+}
+
+@media screen and (max-width: 450px){
+    .twitter{
+        color:cornflowerblue !important;
+    }
+    .itch{
+        color:#FA5C5B !important;
+    }
+    .git{
+        color:slategray !important;
+    }
+    .twitch{
+        color:mediumpurple !important;
+    }
+}
+
+#letterboxd{
+    text-align: center;
+    position:absolute;
+}
+
