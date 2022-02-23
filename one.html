@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Le super site de Théo</title>
+        <meta name="description" content="super site trop cool"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" async/>
+        <link rel="stylesheet" href="stylev2.css"/>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <div class="one_div">
+            <h1 class="one_h1">Twitch chat bot</h1>
+            <p class="one_p">
+                Un "bot" connecté au chat IRC de la chaîne <a href="https://www.twitch.tv" target="_blank">Twitch.tv</a> d'un utilisateur.<br>
+                Le programme va pouvoir intercepté les messages envoyés dans le chat pour ensuite exécuter certaines actions en fonction du contenu du message.<br><br>
+                <br>
+                Fonctionnement du bot : 
+            </p>
+            <ul>
+                <li>Un utilisateur saisit une commande. (généralement un mot-clé précédé d'un " ! ")</li>
+                <li>Le bot vérifie que la commande n'est pas en délai.</li>
+                <li>Exécuter une action, comme par exemple donner la durée du stream.<br>
+                    Dans mon cas, le bot répond à l'utilisateur ayant saisi la commande avec un message sélectionné selon un nombre aléatoire pondéré.
+                </li>
+                <li>En fonction du message séléctionné, un certain nombre de points est attribué à l'utilisateur.</li>
+                <li>Les points de l'utilisateur sont mis à jour dans la base de données grâce à une requête SQL.</li>
+            </ul>
+            <br>
+            <p class="one_p">
+                Ensuite, j'ai mis en place un site web lié à la même BDD pour afficher le classement des utilisateurs.<br>
+                Le site est composé d'une page, qui affiche le classement triant les utilisateurs du plus haut score au plus bas.<br>
+                La date et l'heure correspondant à la dernière utilisation de la commande sur le chat est aussi renseigné sur le site.<br>
+            </p>
+
+            <footer class="footer">
+                <p class="tech">
+                    technologies utilisées <br> pour le bot : tmi.js / node.js / postgreSQL / heroku (hébergement du service)<br>
+                    pour le site : node.js / express / ejs / postgreSQL / heroku (hébergement du site)
+                </p>
+                <p class="gitlinks">
+                    <a href="https://github.com/03h7/twitch_chat_bot_prout" class="gitbot" target="_blank">github du bot</a><a href="https://github.com/03h7/leaderboard_bot_prout" class="gitsite" target="_blank"> et du site</a><br>
+                    C'est une blague partie un peu trop loin..<br>
+                    Vous m'excuserez de la puérilité du projet.
+                </p>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="jquery.js"></script>
+    </body>
+</html>

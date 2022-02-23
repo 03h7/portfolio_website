@@ -1,4 +1,4 @@
-let colors = ["#3F84E5","#B20D30","#C17817","#753E7B"]
+let colors = ["#3F84E5","#B20D30","#C17817","mediumpurple"]
 let i = 0;
 
 $(function(){
@@ -84,3 +84,12 @@ mailEl.addEventListener("click", function(){
 $("#mail").on("click", function(){
     $("#mail").toggleClass("flash")
 });
+/*
+function showFooter(){
+    if($(".footer").css("display")=="none"){
+        $(".footer").css("display", "block");
+    }else{
+        $(".footer").css("display", "none");
+    }
+}
+*/

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Palatino;
+    src: url(PalatinoLinotype.ttf);
+    font-display: swap;
+  }
+
+html,body{
+    background-color:#0b1a18;
+    font-family: Palatino;
+}
+
+.one_h1{
+    font-size: 65px;
+}
+
+.one_p{
+    font-size: 25px;    
+}
+
+.one_div{
+    color: papayawhip;
+    padding-left: 65px;
+    padding-right: 65px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: mediumpurple;
+}
+
+ul{
+    list-style-type: ">_  ";
+    font-size: 20px;
+}
+
+.footer{
+    margin-top:250px;
+    display:grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(2,50%);
+    width: 100%;
+}
+
+.gitbot{
+    color: white;
+}
+
+.gitsite{
+    color: white;
+}
+
+.gitbot:hover{
+    color:slategray;
+}
+
+.gitsite:hover{
+    color:slategray;
+}
+
+.tech{
+    grid-row: 1;
+    grid-column: 1 / 1;
+    text-align: start;
+    place-self: start start;
+    margin: 0;
+}
+
+.gitlinks{
+    grid-row: 1 1;
+    grid-column: 2 2;
+    justify-self: end;
+    text-align: end;
+    margin: 0;
+    place-self: start end;
+}
