@@ -74,12 +74,15 @@ $(function(){
 
 let mailEl = document.getElementById("mail");
 
-mailEl.addEventListener("click", function(){
-    var text = "theome.pro@gmail.com"
-    navigator.clipboard.writeText(text).then(function() {
-      }, function(err) {
-      });
-});
+if(mailEl){
+    mailEl.addEventListener("click", function(){
+        var text = "theome.pro@gmail.com"
+        navigator.clipboard.writeText(text).then(function() {
+          }, function(err) {
+              return ''
+          });
+    });
+}
 
 $("#mail").on("click", function(){
     $("#mail").toggleClass("flash")
